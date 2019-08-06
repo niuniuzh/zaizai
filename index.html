@@ -95,13 +95,6 @@
         <span id="span_dt_dt" style="display: none;"></span>
     </p>
     <style id="style-tag">
-        body {
-            background-color: #1a1c24;
-            color: #fff;
-            font-size: 1.0rem;
-            line-height: 1.4;
-            -webkit-font-smoothing: subpixel-antialiased;
-        }
 
         pre {
             position: fixed;
@@ -354,7 +347,7 @@
                     requestFrame.call(window, this.loop.bind(this));
                 },
                 adjustCanvas: function () {
-                    canvas.width = window.innerWidth - 100;
+                    canvas.width = window.innerWidth - 50;
                     canvas.height = window.innerHeight - 30;
                 },
                 clearFrame: function () {
@@ -376,7 +369,7 @@
             var interval,
                 currentAction,
                 time,
-                maxShapeSize = 30,
+                maxShapeSize = 20,
                 sequence = [],
                 cmd = '#';
             function formatTime(date) {
